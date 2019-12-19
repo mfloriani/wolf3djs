@@ -1,5 +1,5 @@
 # wolf3djs
 
-JS prototype for Wolfstein 3D to explore the raycasting.
+Wolfstein 3D prototype using JavaScript.
 
 ![Demo](demo.gif)
