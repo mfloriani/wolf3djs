@@ -141,6 +141,8 @@ class Ray {
     let nextHorzTouchX = xintercept;
     let nextHorzTouchY = yintercept;
 
+    //if(this.isRayFacingUp) nextHorzTouchY--;
+
     while(isInsideScreen(nextHorzTouchX, nextHorzTouchY)){
       if(level.hasWallAt(nextHorzTouchX, nextHorzTouchY - (this.isRayFacingUp ? 1 : 0))){
         foundHorzWallHit = true;
@@ -177,6 +179,8 @@ class Ray {
 
     let nextVertTouchX = xintercept;
     let nextVertTouchY = yintercept;
+
+    //if(this.isRayFacingLeft) nextVertTouchX--;
 
     while(isInsideScreen(nextVertTouchX, nextVertTouchY)){
       if(level.hasWallAt(nextVertTouchX - (this.isRayFacingLeft ? 1 : 0), nextVertTouchY)){
@@ -223,7 +227,7 @@ class Ray {
 }
 
 var level = new Level();
-var player = new Player(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
+var player = new Player(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 7);
 let rays = [];
 
 
