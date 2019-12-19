@@ -1,5 +1,5 @@
 # wolf3djs
 
-Minimalist Wolfenstein 3D prototype using JavaScript.
+It is a minimalist Wolfenstein 3D prototype using JavaScript.
 
 ![Demo](demo.gif)
